@@ -1,7 +1,7 @@
 
 
 html, body {
-    background-color: #BFBD9F;
+    background-color: white;
     color: white;
     margin: 0;
     padding: 0;
@@ -20,8 +20,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 .emphasis-color {
-    color: #F1F2D8;
-    text-shadow: 0 2px 0.4pt #555;
+    color: deepskyblue;
 }
 
 .error-color {
@@ -56,7 +55,7 @@ dl dd {
     width: 1220px;
     margin: 0 auto;
     padding: 20px 0 40px 0;
-    background-color: #BFBD9F;
+    background-color: white;
 }
 
 .unselectable {
@@ -75,10 +74,10 @@ button {
     font-weight: bold;
     padding-left: 10px;
     padding-right: 10px;
-    color: #333;
-    background-color: #777;
-    text-shadow: 0 0 3px #aaa;
-    border: 1px solid #666;
+    color: white;
+    background-color: deepskyblue;
+    /*text-shadow: 0 0 3px #aaa;*/
+    border: 1px solid white;
     border-radius: 5px;
     margin-right: 5px;
 }
@@ -162,6 +161,13 @@ button.right {
     width: 1220px;
     margin: 10px auto;
     height: 320px;
+    background-color: #282a36 !important;
+    color: white;
+    border: 2px solid deepskyblue;
+}
+.CodeMirror div.CodeMirror-cursor
+{
+    border-color: white;
 }
 
 .world {
