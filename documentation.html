@@ -12,15 +12,21 @@
 
     <script type="text/javascript" src="libs/highlight/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        code{
+            border: 2px solid deepskyblue;
+        }
+        </style>
 </head>
 <body>
     <div class="container" style="width: 960px">
         <div class="header">
-            <h1>Elevator Saga <em class="emphasis-color">Help and API documentation</em></h1>
+            <h1>Elevator challange <em class="emphasis-color">Help and API documentation</em></h1>
         </div>
 
         <div class="help">
-            <h2>About the game</h2>
+            <h2>About the challenge game</h2>
             <p>
                 This is a game of programming!<br>
                 Your task is to program the movement of elevators, by writing a program in <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">JavaScript</a>.
@@ -146,8 +152,10 @@ elevator.checkDestinationQueue();</code></pre></td></tr>
             </table>
         </div>
         <div class="footer">
-            <h4>Made by Magnus Wolffelt and contributors</h4>
-            <h4><a href="https://github.com/magwo/elevatorsaga">Source code</a> on GitHub</h4>
+            <a href="#" style="font-size: 12px;">About</a>
+            <h4>Made by Magnus Wolffelt and contributors, extended by Dominik Goss</h4>
+            <h4>Version <span class="emphasis-color">1.6.5.1</span></h4>
+            <h4><a href="https://github.com/dominikgoss/elevatorsaga">Source code</a> on GitHub</h4>
         </div>
     </div>
 
@@ -159,6 +167,15 @@ elevator.checkDestinationQueue();</code></pre></td></tr>
 
         ga('create', 'UA-56810935-1', 'auto');
         ga('send', 'pageview');
+
+        $(function(){
+            $('.footer>a').on('click', function(event){
+                event.preventDefault();
+                $(this).hide();
+                $('.footer h4').show();
+            });
+            $('.footer h4').hide();
+        });
     </script>
 </body>
 </html>

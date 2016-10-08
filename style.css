@@ -176,7 +176,9 @@ button.right {
     background-color: #333;
     padding: 0;
     overflow: hidden;
+    border: 2px solid deepskyblue;
 }
+
 
 .innerworld {
     position: relative;
@@ -287,6 +289,7 @@ button.right {
 
 .elevator .directionindicator .fa.activated{
     color: #33ff44;
+    color: deepskyblue;
 }
 
 .elevator .floorindicator {
@@ -316,6 +319,7 @@ button.right {
 }
 .elevator .buttonpress.activated {
     color: #33ff44;
+    color: deepskyblue;
 }
 
 .floor {
@@ -335,6 +339,7 @@ button.right {
 }
 .floor .buttonindicator .activated {
     color: rgba(55, 255, 55, 1.0);
+    color: deepskyblue;
 }
 
 .floor .floornumber {
